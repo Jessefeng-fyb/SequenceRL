@@ -1,6 +1,7 @@
 import tensorflow as tf
 from tensorflow.python.ops import tensor_array_ops, control_flow_ops
 import cPickle
+# from six.moves import cPickle
 class BasicLstm(object):
     def __init__(self, vocab_num, batch_size, input_size, hidden_size,
                  n_steps, start_token,grad_clip=5.0,
